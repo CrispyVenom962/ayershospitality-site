@@ -240,3 +240,14 @@ footer{border-top-color:var(--line);color:var(--stone)}footer a{color:var(--ston
 .vs-us{font-family:var(--serif);font-size:1.45rem;line-height:1.25;color:var(--ink);position:relative;padding-left:26px}
 .vs-us::before{content:"";position:absolute;left:0;top:.42em;width:12px;height:2px;background:var(--ochre)}
 @media(max-width:760px){.vs-head{display:none}.vs-row{grid-template-columns:1fr;gap:6px;padding:20px 0}.vs-them{font-size:.9rem}.vs-them::before{content:"Large firm: ";color:var(--stone)}.vs-us{font-size:1.25rem}}
+/* v8 */
+.kicker{color:#D8B76A;font-size:.95rem;letter-spacing:.04em;margin:0 0 18px;opacity:0;animation:rise .9s cubic-bezier(.2,.7,.2,1) forwards}
+.hero h1{max-width:20ch}
+.who-close{margin-top:28px;font-family:var(--serif);font-size:1.25rem;line-height:1.4;color:var(--ink);max-width:48ch}
+.vs-tag{display:block;font-family:var(--sans);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--stone);margin-bottom:8px}
+.vs-us .vs-tag{color:#D8B76A}
+.vs-head{display:none}
+.vs-row{align-items:start}
+.vs-them{padding-top:4px}
+.vs-us::before{top:2.15em}
+@media(max-width:760px){.vs-them::before{content:none}.vs-us::before{top:2.05em}}
