@@ -29,7 +29,7 @@ Propagation: usually under an hour (TTL is 1 hour). The old Wix site keeps showi
 - `hello@ayershospitality.com` - replace with the address you actually use, or set up forwarding later
 
 ## Photos
-Add `img/stephen.jpg` and `img/william.jpg` (square, min 400x400).
+Upload to the top level (no folder), exact names: `hero.jpg` (property, 4:5 or wider), `team.jpg` (you and Stephen on site), `detail.jpg` (working-hotel detail), `band.jpg` (landscape, darkened by CSS), `stephen.jpg`, `william.jpg` (square headshots). Any that are missing are simply hidden. JPG, max 1600px wide, under 300 KB.
 
 ## Prices
 Edit in `services.html` and `pt-servicos.html`, plus the three headline prices in both `index.html` files. Keep them matching.

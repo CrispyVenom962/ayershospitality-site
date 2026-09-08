@@ -104,3 +104,56 @@ footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
 footer a{color:var(--stone)}
 :focus-visible{outline:2px solid var(--ochre);outline-offset:3px}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* ---- polish pass ---- */
+header{position:sticky;top:0;z-index:20;transition:box-shadow .3s,background .3s}
+header.scrolled{background:rgba(246,245,241,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:0 1px 0 var(--line)}
+.brand img{height:40px;width:auto;display:block}
+.brand{display:flex;align-items:center;gap:12px}
+/* hero reveal - one orchestrated sequence */
+.hero h1,.hero .lead,.hero .btn,.hero .fit{opacity:0;transform:translateY(14px);animation:rise .9s cubic-bezier(.2,.7,.2,1) forwards}
+.hero .lead{animation-delay:.15s}.hero .btn{animation-delay:.3s}.hero .fit{animation-delay:.45s}
+@keyframes rise{to{opacity:1;transform:none}}
+/* section reveal on scroll */
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
+.checks li,.pkg,.steps li,.exp li{transition-delay:calc(var(--i,0)*60ms)}
+/* hero backdrop: faint azulejo grid in the corner */
+.hero{position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-60px;top:-60px;width:420px;height:420px;pointer-events:none;opacity:.07;
+  background-image:linear-gradient(var(--blue) 1px,transparent 1px),linear-gradient(90deg,var(--blue) 1px,transparent 1px);background-size:42px 42px;
+  -webkit-mask-image:radial-gradient(circle at 70% 30%,#000 0,transparent 70%);mask-image:radial-gradient(circle at 70% 30%,#000 0,transparent 70%)}
+@media(max-width:760px){.hero::after{width:260px;height:260px;right:-80px}}
+/* buttons */
+.btn{transition:background .25s,transform .25s,box-shadow .25s}
+.btn:hover{transform:translateY(-1px);box-shadow:0 6px 18px rgba(42,74,122,.22)}
+.band .btn:hover{box-shadow:0 6px 18px rgba(0,0,0,.18)}
+/* price strip: thin ochre rule for warmth */
+.strip{border-top:3px solid var(--ochre)}
+/* team photos: soft frame */
+.person img{box-shadow:0 12px 30px rgba(28,36,48,.12)}
+/* type refinement */
+h1{letter-spacing:-.02em}
+.lead{letter-spacing:-.005em}
+@media(prefers-reduced-motion:reduce){.hero h1,.hero .lead,.hero .btn,.hero .fit{animation:none;opacity:1;transform:none}.reveal{opacity:1;transform:none;transition:none}}
+.reveal .checks li,.reveal .steps li,.reveal .exp li,.reveal .pkg{opacity:0;transform:translateY(10px);transition:opacity .6s ease,transform .6s ease;transition-delay:calc(var(--i,0)*70ms)}
+.reveal.in .checks li,.reveal.in .steps li,.reveal.in .exp li,.reveal.in .pkg{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.reveal .checks li,.reveal .steps li,.reveal .exp li,.reveal .pkg{opacity:1;transform:none;transition:none}}
+/* logo lockup */
+.brand{flex-direction:column;align-items:flex-start;gap:2px}
+.brand img{height:46px;width:auto}
+.brand small{padding-left:2px}
+@media(max-width:760px){.brand img{height:38px}.brand small{display:none}}
+footer .wrap{align-items:center}
+/* photos (all optional - hidden if the file is missing) */
+.hero-grid{display:grid;grid-template-columns:1fr;gap:48px;align-items:center}
+.hero.has-photo .hero-grid{grid-template-columns:1.1fr 1fr}
+.hero-photo{margin:0;display:none}
+.hero.has-photo .hero-photo{display:block;opacity:0;animation:rise 1s .2s cubic-bezier(.2,.7,.2,1) forwards}
+.hero-photo img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:3px;box-shadow:0 20px 50px rgba(28,36,48,.16)}
+@media(max-width:760px){.hero.has-photo .hero-grid{grid-template-columns:1fr}.hero-photo img{aspect-ratio:4/3}}
+.detail{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:3px;margin-top:24px}
+.team-photo{width:100%;max-height:480px;object-fit:cover;border-radius:3px;margin:8px 0 40px}
+.band{background-color:var(--blue);background-size:cover;background-position:center;position:relative}
+.band[style*="band.jpg"]::before{content:"";position:absolute;inset:0;background:rgba(30,53,87,.82)}
+.band .wrap{position:relative}
