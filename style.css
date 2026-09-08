@@ -230,3 +230,13 @@ section.alt{background:var(--panel)}
 footer{border-top-color:var(--line);color:var(--stone)}footer a{color:var(--stone)}
 :focus-visible{outline-color:#D8B76A}
 ::selection{background:#B8862B;color:#161C26}
+/* v6: editorial contrast block replaces the boxed compare */
+.compare{display:none}
+.vs{max-width:980px}
+.vs-head{display:grid;grid-template-columns:1fr 1.25fr;gap:40px;padding:0 0 14px;color:var(--stone);font-size:.9rem;border-bottom:1px solid var(--line)}
+.vs-head div:last-child{color:#D8B76A}
+.vs-row{display:grid;grid-template-columns:1fr 1.25fr;gap:40px;padding:26px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.vs-them{color:var(--stone);font-size:1rem}
+.vs-us{font-family:var(--serif);font-size:1.45rem;line-height:1.25;color:var(--ink);position:relative;padding-left:26px}
+.vs-us::before{content:"";position:absolute;left:0;top:.42em;width:12px;height:2px;background:var(--ochre)}
+@media(max-width:760px){.vs-head{display:none}.vs-row{grid-template-columns:1fr;gap:6px;padding:20px 0}.vs-them{font-size:.9rem}.vs-them::before{content:"Large firm: ";color:var(--stone)}.vs-us{font-size:1.25rem}}

@@ -22,10 +22,10 @@ Leave NS and everything else alone.
 Propagation: usually under an hour (TTL is 1 hour). The old Wix site keeps showing until then.
 
 ## Before going live - find and replace
-- `[CAL-LINK]` - Cal.com event link for the free 20-min call (all pages)
+- Cal.com link is https://cal.com/ayershospitality/20min (all pages)
 - `[WHATSAPP-NUMBER]` - digits only, e.g. 351910000000 (contact pages)
 - `[+351 XXX XXX XXX]` - display version of the number (contact pages)
-- `[PORTO ADDRESS]` / `[MORADA PORTO]` - footer, or delete
+- Footer shows "Matosinhos, Porto" only (no street address, by choice)
 - `hello@ayershospitality.com` - replace with the address you actually use, or set up forwarding later
 
 ## Photos
