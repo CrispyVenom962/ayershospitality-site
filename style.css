@@ -269,3 +269,16 @@ footer{border-top-color:var(--line);color:var(--stone)}footer a{color:var(--ston
   .vs-us{font-size:1.2rem;padding-left:16px;border-left:2px solid var(--ochre)}
   .vs-us::before{content:none}
 }
+/* v11: footer with legal block */
+footer{padding:56px 0 36px}
+footer .wrap{display:block}
+.foot-top{display:flex;justify-content:space-between;gap:32px;flex-wrap:wrap;align-items:flex-start;padding-bottom:28px;border-bottom:1px solid var(--line)}
+.foot-top img{display:block;margin-bottom:12px}
+.foot-top p{margin:0;color:var(--stone)}
+.foot-contact{text-align:right;line-height:1.9}
+.foot-contact a{color:var(--ink);text-decoration:none}
+.foot-contact a:hover{color:#D8B76A}
+.foot-legal{padding-top:22px;font-size:.8rem;color:#7C8592;line-height:1.7}
+.foot-legal p{max-width:none;margin:0 0 6px}
+.foot-legal a{color:#9AA3AE}
+@media(max-width:760px){.foot-contact{text-align:left}}
