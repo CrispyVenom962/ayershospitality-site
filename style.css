@@ -251,3 +251,12 @@ footer{border-top-color:var(--line);color:var(--stone)}footer a{color:var(--ston
 .vs-them{padding-top:4px}
 .vs-us::before{top:2.15em}
 @media(max-width:760px){.vs-them::before{content:none}.vs-us::before{top:2.05em}}
+/* v9: about page team layout */
+.team-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;margin-top:8px}
+@media(max-width:760px){.team-grid{grid-template-columns:1fr;gap:48px}}
+.person{display:block;margin:0;padding-top:24px;border-top:1px solid var(--ochre)}
+.person img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;border-radius:3px;margin:0 0 24px;box-shadow:0 20px 40px rgba(0,0,0,.4)}
+.person .role{font-family:var(--sans);font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;color:#D8B76A;margin:0 0 10px}
+.person h3{font-size:1.9rem;margin:0 0 14px}
+.person p{color:var(--stone);max-width:none;line-height:1.7}
+.team-photo{margin:8px 0 48px}
