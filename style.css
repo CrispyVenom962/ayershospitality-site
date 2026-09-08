@@ -260,3 +260,12 @@ footer{border-top-color:var(--line);color:var(--stone)}footer a{color:var(--ston
 .person h3{font-size:1.9rem;margin:0 0 14px}
 .person p{color:var(--stone);max-width:none;line-height:1.7}
 .team-photo{margin:8px 0 48px}
+/* v10: comparison on mobile */
+@media(max-width:760px){
+  .vs-row{grid-template-columns:1fr;gap:10px;padding:22px 0}
+  .vs-tag{display:none}
+  .vs-them{font-size:.92rem;color:var(--stone);padding:0}
+  .vs-them::before{content:"A large firm ";color:#7C8592;font-style:italic}
+  .vs-us{font-size:1.2rem;padding-left:16px;border-left:2px solid var(--ochre)}
+  .vs-us::before{content:none}
+}
