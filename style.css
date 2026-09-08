@@ -282,3 +282,4 @@ footer .wrap{display:block}
 .foot-legal p{max-width:none;margin:0 0 6px}
 .foot-legal a{color:#9AA3AE}
 @media(max-width:760px){.foot-contact{text-align:left}}
+.foot-label{display:block;font-family:var(--sans);font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;color:#D8B76A;margin-bottom:6px}
