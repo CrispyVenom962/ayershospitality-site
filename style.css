@@ -42,7 +42,7 @@ header{border-bottom:1px solid var(--line);background:var(--paper)}
 /* price strip */
 .strip{background:var(--ink);color:#fff;padding:36px 0}
 .strip .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
-.strip div{border-left:1px solid rgba(255,255,255,.25);padding-left:20px}
+.strip div,.strip .wrap a{border-left:1px solid rgba(255,255,255,.25);padding-left:20px}
 .strip b{font-family:var(--serif);font-size:1.9rem;font-weight:500;display:block;line-height:1.1}
 .strip span{color:rgba(255,255,255,.75);font-size:.95rem}
 @media(max-width:760px){.strip .wrap{grid-template-columns:1fr;gap:20px}}
@@ -190,7 +190,7 @@ header.scrolled{background:rgba(255,255,255,.92)}
 /* offer card overlapping the hero */
 .strip{background:transparent;color:var(--ink);padding:0;margin:-64px 24px 0;position:relative;z-index:2;border-top:0}
 .strip .wrap{background:#fff;border:1px solid var(--line);border-top:3px solid var(--ochre);border-radius:4px;padding:32px 36px;box-shadow:0 24px 60px rgba(28,36,48,.14)}
-.strip div{border-left-color:var(--line)}
+.strip div,.strip .wrap a{border-left-color:var(--line)}
 .strip b{color:var(--ink)}
 .strip span{color:var(--stone)}
 @media(max-width:760px){.strip{margin:-48px 12px 0}.strip .wrap{padding:24px}.strip div{border-left:0;border-top:1px solid var(--line);padding:16px 0 0}.strip div:first-child{border-top:0;padding-top:0}}
@@ -283,3 +283,9 @@ footer .wrap{display:block}
 .foot-legal a{color:#9AA3AE}
 @media(max-width:760px){.foot-contact{text-align:left}}
 .foot-label{display:block;font-family:var(--sans);font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;color:#D8B76A;margin-bottom:6px}
+
+/* price strip links */
+.strip .wrap a{display:block;color:inherit;text-decoration:none}
+.strip .wrap a:hover b{color:var(--gold,#C9A030)}
+.strip .wrap em{display:block;font-style:normal;font-size:.85rem;margin-top:10px;color:var(--gold,#C9A030)}
+.pkg{scroll-margin-top:96px}
