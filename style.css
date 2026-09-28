@@ -170,7 +170,7 @@ header.scrolled{background:rgba(255,255,255,.92)}
 
 .hero{background:var(--ink) url(hero.jpg) center/cover no-repeat;color:#fff;padding:104px 0 128px;position:relative;overflow:hidden}
 .hero::before{content:"";position:absolute;inset:0;background:linear-gradient(100deg,rgba(28,36,48,.94) 40%,rgba(28,36,48,.72))}
-.hero::after{content:"";position:absolute;top:auto;left:auto;right:-4%;bottom:-6%;width:min(60vw,720px);height:min(60vw,720px);pointer-events:none;opacity:.22;
+.hero::after{content:"";position:absolute;top:auto;left:auto;right:-4%;bottom:-6%;width:min(60vw,720px);height:min(60vw,720px);pointer-events:none;opacity:0;
   background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><g fill='none' stroke='%23B8862B' stroke-width='.6'><path d='M5 60A45 45 0 0 1 95 60'/><path d='M17 60A33 33 0 0 1 83 60'/><path d='M29 60A21 21 0 0 1 71 60'/><path d='M50 60V15M50 60L18 28M50 60L82 28M50 60L8 45M50 60L92 45'/><path d='M2 63H98'/></g></svg>") no-repeat center/contain;
   -webkit-mask-image:none;mask-image:none}
 .hero .wrap{position:relative;z-index:1}
@@ -208,7 +208,7 @@ header,header.scrolled{background:rgba(22,28,38,.9);border-bottom-color:var(--li
 .menu-btn{color:var(--ink);border-color:var(--line)}
 @media(max-width:760px){.links{background:#161C26;border-bottom-color:var(--line)}}
 .hero{background-color:#161C26}
-.hero::before{background:linear-gradient(100deg,rgba(22,28,38,.94) 40%,rgba(22,28,38,.72))}
+.hero::before{background:linear-gradient(90deg,rgba(22,28,38,.88) 0%,rgba(22,28,38,.72) 41%,rgba(22,28,38,.22) 85%)}
 .hero .btn:hover{background:#cf9a37}
 section.alt{background:var(--panel)}
 .strip .wrap{background:var(--panel);border-color:var(--line)}
@@ -307,3 +307,5 @@ footer .wrap{display:block}
 .insight-cta{margin-top:50px;padding:36px;background:#1E2632;border-top:2px solid #B8862B}.insight-cta h2{color:#F3EFE6}.insight-cta p{font-size:.95rem;color:#B7BEC7}
 @media(max-width:850px){.insights-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:560px){.insights-grid{grid-template-columns:1fr}.insight-hero{padding:50px 0}.insight-card{min-height:225px}.insight-article{padding-top:44px}}
+
+@media(max-width:760px){.hero{background-position:63% center}.hero::before{background:linear-gradient(90deg,rgba(22,28,38,.89),rgba(22,28,38,.62))}}
