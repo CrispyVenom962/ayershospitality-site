@@ -290,19 +290,20 @@ footer .wrap{display:block}
 .strip .wrap em{display:block;font-style:normal;font-size:.85rem;margin-top:10px;color:var(--gold,#C9A030)}
 .pkg{scroll-margin-top:96px}
 
-/* Insights */
-.insight-hero{padding:76px 0 64px;background:#eae8e1;border-bottom:1px solid var(--line)}
-.insight-hero h1{max-width:18ch}.insight-hero .lead{font-size:1.2rem;max-width:65ch;color:var(--stone)}
-.insight-back{display:inline-block;margin-bottom:30px;text-decoration:none;font-size:.9rem}
-.insight-meta{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--blue);font-weight:600}
-.insight-byline{color:var(--stone);font-size:.9rem;margin-top:22px}
+/* Insights — Ayers dark editorial theme */
+.insight-hero{padding:76px 0 64px;background:#1E2632;border-bottom:1px solid var(--line)}
+.insight-hero h1{max-width:19ch;color:#F3EFE6}.insight-hero .lead{font-size:1.2rem;max-width:65ch;color:#B7BEC7}
+.insight-hero .kicker{color:#D8B76A}.insight-back{display:inline-block;margin-bottom:30px;color:#D8B76A;text-decoration:none;font-size:.9rem}
+.insight-back:hover,.insight-pagination a:hover{color:#F3EFE6}
+.insight-meta{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:#D8B76A;font-weight:600}
+.insight-byline{color:#B7BEC7;font-size:.9rem;margin-top:22px}
 .insights-list{padding-top:68px;padding-bottom:96px}.insights-intro{margin-bottom:30px}
 .insights-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
-.insight-card{background:#fff;border:1px solid var(--line);padding:30px;text-decoration:none;color:var(--ink);display:flex;flex-direction:column;min-height:280px;transition:transform .2s,border-color .2s}
-.insight-card:hover{transform:translateY(-4px);border-color:var(--ochre)}
-.insight-card h2{font-size:1.35rem;margin:18px 0 12px}.insight-card p{font-size:.9rem;color:var(--stone);line-height:1.6}.insight-arrow{margin-top:auto;color:var(--blue);font-weight:600;font-size:.85rem}
-.insight-article{max-width:800px;padding-top:64px;padding-bottom:100px;font-size:1.08rem;line-height:1.85}
-.insight-article>p{max-width:70ch;margin-bottom:1.25em}.insight-pagination{display:flex;justify-content:space-between;gap:20px;border-top:1px solid var(--line);padding-top:25px;margin-top:50px;font-size:.9rem}.insight-pagination a{text-decoration:none}
-.insight-cta{margin-top:50px;padding:36px;background:#eae8e1}.insight-cta p{font-size:.95rem}
+.insight-card{background:#1E2632;border:1px solid rgba(255,255,255,.14);padding:30px;text-decoration:none;color:#F3EFE6;display:flex;flex-direction:column;min-height:280px;transition:transform .2s,border-color .2s,background .2s}
+.insight-card:hover{transform:translateY(-4px);border-color:#D8B76A;background:#253143}
+.insight-card h2{font-size:1.35rem;margin:18px 0 12px;color:#F3EFE6}.insight-card p{font-size:.9rem;color:#B7BEC7;line-height:1.6}.insight-arrow{margin-top:auto;color:#D8B76A;font-weight:600;font-size:.85rem}
+.insight-article{max-width:800px;padding-top:64px;padding-bottom:100px;font-size:1.08rem;line-height:1.85;color:#F3EFE6}
+.insight-article>p{max-width:70ch;margin-bottom:1.25em}.insight-pagination{display:flex;justify-content:space-between;gap:20px;border-top:1px solid var(--line);padding-top:25px;margin-top:50px;font-size:.9rem}.insight-pagination a{color:#D8B76A;text-decoration:none}
+.insight-cta{margin-top:50px;padding:36px;background:#1E2632;border-top:2px solid #B8862B}.insight-cta h2{color:#F3EFE6}.insight-cta p{font-size:.95rem;color:#B7BEC7}
 @media(max-width:850px){.insights-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:560px){.insights-grid{grid-template-columns:1fr}.insight-hero{padding:50px 0}.insight-card{min-height:225px}.insight-article{padding-top:44px}}
